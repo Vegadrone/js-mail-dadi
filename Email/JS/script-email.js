@@ -35,3 +35,16 @@ for (let i = 0; i < emailAdresses.length ; i++ ) {
     }
 }
 console.log(correctEmail);
+
+//! SOLUZIONE DI STEFANO
+
+// for (let i = 0; i < emailAdresses.length; i++) {
+//     console.log(i + emailAdresses[i]);
+
+//     if (emailAdresses[i] === mailUserChoice) {
+//         found = true
+//     }
+// }
+
+// if (found) {stampa trovata! }
+// else {stampa NON TROVATA! }
