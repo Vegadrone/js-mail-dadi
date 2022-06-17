@@ -1,1 +1,1 @@
-const AIDice = Math.floor (Math.random ()+)
+const AIDice = Math.floor (Math.random ()*6 )

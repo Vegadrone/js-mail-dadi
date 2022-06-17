@@ -24,17 +24,14 @@ const emailAdresses = ["arnaldopiepolo@pinkopallo.it", "francesco.gozzari@pinkop
 //  console.log (emailAdresses);
 const mailUserChoice = prompt ('Inserisci qui una mail @pinkopallo e verifica se hai l\'accesso');
 
-let correctEmail = false;
+let correctEmail = "La tua email non è in lista, prova un'altra mail.";
 
 for (let i = 0; i < emailAdresses.length ; i++ ) {
     console.log (i + emailAdresses [i]);
 
     if(emailAdresses [i] === mailUserChoice) {
-        correctEmail = true;
-        alert ("Email corretta. Hai accesso!");
-    } else {
-        alert ("La email inserita non è in lista, prova un'altra email");
-        correctEmail = false
+        correctEmail = "La tua mail è in lista!";
+        // alert ("Email corretta. Hai accesso!");
     }
-    console.log(correctEmail)
 }
+console.log(correctEmail);
