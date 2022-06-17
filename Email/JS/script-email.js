@@ -17,7 +17,6 @@ Che ci sia un array da qualche parte? Se dobbiamo confrontare qualcosa che "cosa
 
 // TODO Come faccio a targettare un solo emailAddress senza che mi faccia tutto quanto il ciclo?
 
-
 const emailAdresses = ["arnaldopiepolo@pinkopallo.it", "francesco.gozzari@pinkopallo.com", "gianpippo_ortoni@pinkopallo.it", 
 "gennerofriariello@pinkopallo.it", "mariafazzoni@pinkopallo.it", "ornella-rotopempia@pinkopallo.it", "blackmambo_27@pinkopallo.it", 
 "darkdemon9711@pinkopallo.it", "giannigommo@pinkopallo.it", "stefaniarambaldi@pinkopallo.it", "mordacithuan@pinkopallo.it", 
@@ -25,13 +24,17 @@ const emailAdresses = ["arnaldopiepolo@pinkopallo.it", "francesco.gozzari@pinkop
 //  console.log (emailAdresses);
 const mailUserChoice = prompt ('Inserisci qui una mail @pinkopallo e verifica se hai l\'accesso');
 
+let correctEmail = false;
+
 for (let i = 0; i < emailAdresses.length ; i++ ) {
     console.log (i + emailAdresses [i]);
 
     if(emailAdresses [i] === mailUserChoice) {
+        correctEmail = true;
         alert ("Email corretta. Hai accesso!");
     } else {
         alert ("La email inserita non è in lista, prova un'altra email");
+        correctEmail = false
     }
-
+    console.log(correctEmail)
 }
