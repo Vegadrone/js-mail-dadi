@@ -1,1 +1,1 @@
-console.log('ciao dadi')
+const AIDice = Math.floor (Math.random ()+)
